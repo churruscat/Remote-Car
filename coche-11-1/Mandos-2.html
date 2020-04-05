@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manejo coche Marti</title>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.knob.min.js"></script>
+
+        <script src="js/g_mandos.js"></script>
+        <style>
+            body{
+              padding: 0;
+              margin: 0px 0px;
+              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+              font-weight: 300;
+              text-rendering: optimizelegibility;
+            }
+            p{font-size: 30px; line-height: 30px}
+            div.controles{text-align: center; width: 50%; float: left}
+            div.controles > p{font-size: 20px}            
+        </style>
+            
+    </head>
+    <body>
+        <div  style="text-align: center; width:100%;font-size:200%;">
+            <h1>Coche equipo 3C</h1>
+        </div>
+        <div style="clear:both"></div> 
+<!-- ahora el acelerador -->        
+        <div class="controles" >
+            <p> Acelerador</p>
+            <input class="acelerador" data-angleOffset=-90 data-angleArc=180 data-min=-50
+                data-max=50 data-fgColor="#FF0000" data-thickness="0.6" data-width="100%"
+                data-cursor=true data-rotation="clockwise" value="0">
+      </div> 
+<!-- y el volante -->     
+                        
+        <div class="controles"> 
+        <p> Volante</p>
+           <input class="volante" data-angleOffset=-150 data-angleArc=300 data-min=-50
+                data-max=50 data-fgColor="#00EE00" data-thickness="0.3" 
+                data-cursor=true data-rotation="clockwise" value="0" data-width="100%">
+        </div>
+
+    </body>
+</html>
